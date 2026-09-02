@@ -3508,8 +3508,8 @@ img.u-pull-left {
     margin-left: 0;
     max-width: 72rem;
     font-family: var(--font-1);
-    font-size: clamp(1.05rem, 1.5vw, 1.35rem);
-    line-height: 1.65;
+    font-size: var(--text-sm);
+    line-height: var(--vspace-0_75);
     letter-spacing: 0;
 }
 
@@ -3518,6 +3518,14 @@ img.u-pull-left {
     display: block;
     padding-left: 0;
     margin-bottom: 0.45rem;
+}
+
+@media screen and (max-width: 700px) {
+    .about-expertise .skills-list,
+    .about-expertise .skills-lis {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
 }
 
 /* --------------------------------------------------------------------
